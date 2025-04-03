@@ -26,7 +26,8 @@ public class ErrorDictionary
     foreach (var entry in _dictionary)
     {
       Console.WriteLine($"Слово без ошибок: {entry.Key}");
-      Console.WriteLine($"Слова с ошибками: {string.Join(", ", entry.Value)}\n");
+      Console.WriteLine($"Слова с ошибками: {string.Join(", ", entry.Value)}");
+      Console.WriteLine("\nНажмите на любую клавишу, чтобы вернуться в меню.");
     }
   }
 }
