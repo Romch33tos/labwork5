@@ -17,6 +17,7 @@ public class Menu
     while (true)
     {
       Console.Clear();
+      Console.WriteLine("Список действий: ");
       Console.WriteLine("1. Обработать файлы");
       Console.WriteLine("2. Добавить слова в словарь");
       Console.WriteLine("3. Показать словарь");
@@ -47,18 +48,18 @@ public class Menu
     Console.Write("Путь к папке: ");
     var path = Console.ReadLine();
     _textProcessor.ProcessDirectory(path);
-    Console.WriteLine("Готово!");
+    Console.WriteLine("Готово!\nНажмите на любую клавишу, чтобы вернуться в меню.");
   }
 
   private void AddWords()
   {
-    Console.Write("Правильное слово: ");
+    Console.Write("Правильно написанное слово: ");
     var word = Console.ReadLine();
 
     Console.Write("Ошибки (через запятую): ");
     var mistakes = Console.ReadLine().Split(',');
 
     _errorDict.AddEntry(word, new List<string>(mistakes));
-    Console.WriteLine("Добавлено!");
+    Console.WriteLine("Добавлено в словарь!\nНажмите на любую клавишу, чтобы вернуться в меню.");
   }
 }
