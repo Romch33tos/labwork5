@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 public class ErrorDictionary
 {
-  private readonly Dictionary<string, List<string>> _dictionary = new()
+  private readonly Dictionary<string, List<string>> _dictionary = new Dictionary<string, List<string>>
   {
     {"привет", new List<string> {"првиет", "пирвет", "приевт", "привки"}},
     {"пока", new List<string> {"пако", "копа", "пакеда"}},
