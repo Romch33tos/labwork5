@@ -54,7 +54,7 @@ public class Menu
   private void AddWords()
   {
     Console.Write("Правильно написанное слово: ");
-    var word = Console.ReadLine();
+    string word = Console.ReadLine();
 
     Console.Write("Ошибки (через запятую): ");
     var mistakes = Console.ReadLine().Split(',');
